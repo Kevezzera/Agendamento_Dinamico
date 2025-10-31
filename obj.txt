@@ -1,7 +1,5 @@
-Objetivos do Projeto
+Lógica
 
--Lado Cliente:
- .Agendamento
- 
--Lado Adm:
- .Disponibilizar orarios para agendamento do clientez
+.O cliente informa o seu nome;
+.O sistema verifica o dia da semana com date time;
+.O sistema retorna as semanas a partir da semana atual ;
