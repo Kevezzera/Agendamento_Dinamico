@@ -1,0 +1,7 @@
+Objetivos do Projeto
+
+-Lado Cliente:
+ .Agendamento
+ 
+-Lado Adm:
+ .Disponibilizar orarios para agendamento do clientez
