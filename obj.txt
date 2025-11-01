@@ -1,5 +1,28 @@
-Lógica
+Lógica Poo
 
-.O cliente informa o seu nome;
-.O sistema verifica o dia da semana com date time;
-.O sistema retorna as semanas a partir da semana atual ;
+obj: (Horário)
+
+.Haverá dois sistema (Adm / Cliente) que, compartilharam o mesmo banco de dados.
+
+- Sistema do Cliente -
+.O sistema exibira um menu com opções (agendamento / remarcar);
+•Função agendar_horário:
+    .O sistema exibira as opções de serviços oferecido;
+    .O cliente informa o seu nome, telefone, email e o serviço;
+    .O sistema verifica o dia da semana com date time;
+    .O sistema retorna as semanas disponiveis a partir da semana atual;
+        - O sistema armazenara em uma variavel (semana_atual) um valor de 1 a 7 equivalente a 
+          um dia da semana.
+        - Com o laço de repetição for(rang) o sistema retornara as semanas, iniciando a partir
+          do valor dentro da variavel semana_atual ate o valor -1 que representa o final da 
+          lista.    
+    .A partir (id) do horário o cliente confirmará o seu atendimento. 
+    .Por fim o sistema retornará um mensagem de confirmação.
+
+•Função remarcar_horário:
+    .O cliente informará o seu email;
+    .O sistema retornará o horário marcado;
+    .O cliente confirmará se deseja remarcar ou cancelar o seu horário;
+    .Por fim o sistema retornará um mensagem de confirmação.
+
+
