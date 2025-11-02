@@ -1,4 +1,8 @@
-from Bd import agenda
+
+
+from horarios import agenda
+from class_servicos import *
+from funções import *
 
 def exibir_agenda(agenda):
     for dia, horarios in agenda.items():
@@ -15,12 +19,14 @@ def exibir_horarios(agenda):
                 print(f"id-{info['id']} | {info['horário']}")
 
 while True:
-    print("1 - Cliente")
-    print("2 - Adm")
+    print("1 - Agendar")
+    print("2 - Remarcar / Cancelar")
+    print("3 - Sair")
     opc = input("Escolha uma opção: ")
 
     if opc == "1":
-        print("Digite seu nome")
+        exibir_servico()  #!!!
+        print("Digite seu nome") 
         nome = str(input())
         print("Horários")
         exibir_horarios(agenda)
@@ -30,4 +36,8 @@ while True:
         exibir_agenda(agenda)
         # Adicionarar horário
         # Remover horário
+    elif opc == "2":
+        exit()
+    else:
+        print("Opção invalida!")
         
