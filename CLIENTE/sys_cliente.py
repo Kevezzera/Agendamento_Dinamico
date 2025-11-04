@@ -1,8 +1,8 @@
 
 
 from horarios import agenda
-from class_servicos import *
-from funções import *
+from ADM.class_servicos import *
+from CLIENTE.funções import *
 
 def exibir_agenda(agenda):
     for dia, horarios in agenda.items():

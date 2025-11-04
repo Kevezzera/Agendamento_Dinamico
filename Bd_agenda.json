@@ -1,0 +1,11 @@
+[
+    {
+        "dia": "segunda",
+        "horario": "80:00",
+        "status": "livre",
+        "serviço1": "50.00",
+        "serviço2": "80.00",
+        "serviço3": "100.00",
+        "cliente": null
+    }
+]
