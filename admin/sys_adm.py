@@ -1,9 +1,9 @@
 
-from admin import funções
+from admin import class_arquivo
 
 
 def play_adm():
-    agenda = funções.carregar_agenda()
+    agenda = class_arquivo.carregar_agenda()
     while True:
         print("1 - Exibir Agenda")
         print("2 - Editar Agenda")
@@ -12,8 +12,8 @@ def play_adm():
         
         if opc == "1":
             while True:
-                funções.exibir_agenda(agenda)
-                opc = funções.menu_sair()
+                class_arquivo.exibir_agenda(agenda)
+                opc = class_arquivo.menu_sair()
                 if opc == "v":
                     break
                 elif opc == "s":
@@ -22,16 +22,16 @@ def play_adm():
                     print("Opção invalida!")
         elif opc == "2":
             while True:
-                funções.menu_de_edição()
+                class_arquivo.menu_de_edição()
                 opc = input("Escolha uma opção: ")
 
                 #Adicionar Horário
                 if opc == "1": 
                     dia = input("Semana: ")
                     horario = input("Horário:")
-                    agenda_atualizada = funções.criar_horario(agenda, dia, horario)
-                    funções.atuali_json(agenda_atualizada)
-                    opc = funções.menu_sair()
+                    agenda_atualizada = class_arquivo.criar_horario(agenda, dia, horario)
+                    class_arquivo.atuali_json(agenda_atualizada)
+                    opc = class_arquivo.menu_sair()
                     if opc == "v":
                         break
                     elif opc == "s":
@@ -45,9 +45,9 @@ def play_adm():
                     hora = input("hora: ")
                     valor = input("Valor: ")
                     status = input("Status: ")
-                    agenda_atualizada = funções.editar_agenda(agenda, semana, hora, valor, status)
-                    funções.atuali_json(agenda_atualizada)
-                    opc = funções.menu_sair()
+                    agenda_atualizada = class_arquivo.editar_agenda(agenda, semana, hora, valor, status)
+                    class_arquivo.atuali_json(agenda_atualizada)
+                    opc = class_arquivo.menu_sair()
                     if opc == "v":
                         break
                     elif opc == "s":
